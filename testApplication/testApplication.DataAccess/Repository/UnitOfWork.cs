@@ -16,9 +16,11 @@ namespace testApplication.DataAccess.Repository
             _db = db;
             categoryRepository = new CategoryRepository(_db);
             coverTypeRepository = new CoverTypeRepository(_db);
+            productRepository = new ProductRepository(_db);
         }
         public ICategory categoryRepository { get; private set; }
         public ICoverTypeRepository coverTypeRepository { get; private set; }
+        public IProduct productRepository { get; private set; }
 
         public void save()
         {

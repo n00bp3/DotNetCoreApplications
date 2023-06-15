@@ -10,6 +10,7 @@ namespace testApplication.DataAccess.Repository.IRepository
     {
         ICategory categoryRepository { get; }
         ICoverTypeRepository coverTypeRepository { get; }
+        IProduct productRepository { get; }
         void save();
     }
 }
